@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calcscript.js" defer></script>
+    <style>
+        *{
+            color: #555;
+        }
+        body{
+            background-color: aqua;
+        }
+        .container{
+            width: 350px;
+            background-color: white;
+            margin: 120px auto;
+        }
+        table{
+            width:100%;
+            background-color: #f4f4f4;
+        }
+        td{
+            width: 25%;
+        }
+        button{
+            width:100%;
+            height: 70px;
+            font-size: 24px;
+            background-color: white;
+            border: none;
+        }
+        #inputdata{
+            height: 120px;
+            font-size: 40px;
+            vertical-align: bottom;
+            text-align: right;
+            padding-right: 16px;
+            background-color: #ececec;
+        }
+    </style>
+</head>
+<body>
+    <script src="calcscript.js"></script>
+    <div class="container">
+        <table border="1" cellspacing="0">
+            <tr>
+                <td colspan="4" id="inputdata">0</td>
+            </tr>
+            <tr>
+                <td colspan="3"><button onclick="pushbutt(this)">AC</button></td>
+                <td><button onclick="pushbutt(this)">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="pushbutt(this)">1</button></td>
+                <td><button onclick="pushbutt(this)">2</button></td>
+                <td><button onclick="pushbutt(this)">3</button></td>
+                <td><button onclick="pushbutt(this)">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="pushbutt(this)">4</button></td>
+                <td><button onclick="pushbutt(this)">5</button></td>
+                <td><button onclick="pushbutt(this)">6</button></td>
+                <td><button onclick="pushbutt(this)">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="pushbutt(this)">7</button></td>
+                <td><button onclick="pushbutt(this)">8</button></td>
+                <td><button onclick="pushbutt(this)">9</button></td>
+                <td><button onclick="pushbutt(this)">-</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="pushbutt(this)">0</button></td>
+                <td><button onclick="pushbutt(this)">.</button></td>
+                <td><button onclick="pushbutt(this)">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
